@@ -2,5 +2,17 @@
 {% block title %}Index{% endblock title%}
 
 {% block content %}
+<h1> Jeopardy Game </h1>
+<form method="POST" action="/twoNumbers">
+            <label for="num1">What is the first number?</label>
+            <input type='text' name='num1'>
+            <label for="num2">What is the second number?</label>
+            <input type='text' name='num2'>
+            <label for="operator">What operation do you want (times or plus)?</label>
+            <input type='text' name='operator'>
+            <input type='submit'>
+        </form>
+
+
 
 {% endblock content%}
