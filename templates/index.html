@@ -1,18 +1,16 @@
 {% extends "base.html" %}
 {% block title %}Index{% endblock title%}
-
 {% block content %}
-<h1> Jeopardy Game </h1>
-<form method="POST" action="/twoNumbers">
-            <label for="num1">What is the first number?</label>
-            <input type='text' name='num1'>
-            <label for="num2">What is the second number?</label>
-            <input type='text' name='num2'>
-            <label for="operator">What operation do you want (times or plus)?</label>
-            <input type='text' name='operator'>
-            <input type='submit'>
+<h1> Welcome to Jeopardy! </h1>
+<h1>{{clue_question}}</h1>
+<form method='POST' action="/answerJeopardy">
+            <label for='answer'>What is :</label>
+            <!-- <input type='text' name='answer'> -->
+            <input type="submit" value="Submit">
         </form>
-
-
-
 {% endblock content%}
+Collapse
+
+
+
+
